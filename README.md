@@ -65,11 +65,11 @@ Restart Claude Code. Trigger phrases live at the top of [`SKILL.md`](./SKILL.md)
 
 | You say | It runs |
 |---|---|
-| *"Landing page hero illustration for my SaaS"* / *"官网首图"* | this skill |
+| *"Landing page hero illustration for my SaaS"* | this skill |
 | *"Feature section illustration"* / *"blog header illustration"* | this skill |
 | *"Talk cover / portfolio hero / workshop landing illustration"* | this skill |
-| *"给我一张 Linear / Superhuman 那种插画"* | this skill |
-| *"Purple illustration"* / *"紫色插画"* / *"one-brand-color illustration"* (legacy alias) | this skill |
+| *"Give me a Linear / Superhuman style illustration"* | this skill |
+| *"Purple illustration"* / *"one-brand-color illustration"* (legacy alias) | this skill |
 
 ## Not for
 
