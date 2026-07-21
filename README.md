@@ -1,60 +1,90 @@
-# purple-illustration
+<div align="center">
 
-**紫色（或任意单品牌强调色）SaaS 产品英雄插画风格 · Claude Code Skill**
+[中文](./README.zh.md) · **English**
 
-为 SaaS / AI 产品的营销场景生成一张干净、专业、可信、能一眼看懂产品在做什么的英雄插画。不是解释性配图，不是漫画，不是手绘草图——是一张**能直接放在官网首屏或 blog 顶图**的插画。
-
-**标志性动作**：真产品 UI 卡片漂浮在前景 + 线稿场景在后景 + 少量品牌色装饰散落周围。
+# 🎨 Purple Illustration
 
 ---
 
-## What's inside
+**One-brand-color SaaS product hero illustrations — real UI card × line-art scene × single accent color.**
 
-| 文件 | 作用 |
-|---|---|
-| [`SKILL.md`](./SKILL.md) | Skill 主入口，Claude 读它来决定何时/如何触发 |
-| [`references/style-dna.md`](./references/style-dna.md) | 调色板、线条、材质、禁忌 |
-| [`references/composition-patterns.md`](./references/composition-patterns.md) | 5 种主构图套路 + 装饰物摆放法 |
-| [`references/prompt-template.md`](./references/prompt-template.md) | 单张生图提示词模板（含变量） |
-| [`references/qa-checklist.md`](./references/qa-checklist.md) | 生成后检查和迭代规则 |
-| [`examples/`](./examples/) | 3 个跨构图 + 跨品牌色的示例（SVG 目标图 + 可复制 prompt） |
+[![License](https://img.shields.io/badge/LICENSE-MIT-4c8bf5?style=flat-square&labelColor=333)](./LICENSE)
+[![Version](https://img.shields.io/badge/VERSION-1.0.0-2ea44f?style=flat-square&labelColor=333)]()
+[![Examples](https://img.shields.io/badge/EXAMPLES-3-2ea44f?style=flat-square&labelColor=333)](./examples)
+[![Stars](https://img.shields.io/github/stars/yanliudesign/purple-illustration?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/purple-illustration/stargazers)
 
-## Examples
+[![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-d97757?style=flat-square&labelColor=1a1a1a&logo=anthropic&logoColor=white)](https://claude.ai/code)
+[![Codex](https://img.shields.io/badge/Codex-Skill-2ea44f?style=flat-square&labelColor=1a1a1a)]()
+[![OpenCode](https://img.shields.io/badge/OpenCode-Skill-4c8bf5?style=flat-square&labelColor=1a1a1a)]()
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-8b5cf6?style=flat-square&labelColor=1a1a1a)]()
+[![Hermes](https://img.shields.io/badge/Hermes-Skill-e879a8?style=flat-square&labelColor=1a1a1a)]()
 
-|  | Composition | Scenario | Accent |
-|---|---|---|---|
-| [01](./examples/01-teams-copilot.md) | C · single person + UI card | Group Copilot for Teams — approval moment | `#5B47F5` |
-| [02](./examples/02-meetly-transcript.md) | A · laptop + UI card | Meetly — live transcript & decision detection | `#5B47F5` |
-| [03](./examples/03-meetly-agenda.md) | A · laptop + UI card | Meetly — pre-meeting agenda draft | `#5B47F5` |
+</div>
 
-<p align="left">
+A design-taste skill that turns any SaaS product brief into a **clean, professional hero illustration** — the kind that lives on a landing page, blog header, or feature section. Signature move: a **real product UI card floating in the foreground**, a **line-art scene behind it**, and **one brand color** doing all the accent work.
+
+Not a coloring book. Not a concept illustration. Not a hand-drawn zine. This is the disciplined SaaS look — Linear · Superhuman · Tactiq · Notion — but generated from a prompt.
+
+<p align="center">
   <img src="./examples/01-teams-copilot.png"      width="32%" alt="Group Copilot approval">
   <img src="./examples/02-meetly-transcript.png"  width="32%" alt="Meetly live transcript">
   <img src="./examples/03-meetly-agenda.png"      width="32%" alt="Meetly pre-meeting agenda">
 </p>
 
+## What's inside
+
+| File | Purpose |
+|---|---|
+| [`SKILL.md`](./SKILL.md) | Skill entry point — Claude reads this to decide when / how to trigger |
+| [`references/style-dna.md`](./references/style-dna.md) | Palette, line weight, materials, hard rules |
+| [`references/composition-patterns.md`](./references/composition-patterns.md) | 5 primary compositions + how to place decorations |
+| [`references/prompt-template.md`](./references/prompt-template.md) | The single-image prompt template (variables + scene / decoration libraries) |
+| [`references/qa-checklist.md`](./references/qa-checklist.md) | Post-generation checklist + local-edit prompts for common failures |
+| [`examples/`](./examples/) | 3 real generations with copy-paste prompts |
+
+## Three rules the skill lives by
+
+1. **One accent color only.** No rainbows. Every stray blue / green / red is a bug. Purple is just the default — you can swap it for any brand HEX.
+2. **The UI card must be a real product.** Show *this* product's most-core screen — real names, real numbers, real copy. No lorem ipsum, no generic chat window.
+3. **Layering, not shadows.** The card floats because it overlaps the scene, not because of a drop shadow. No glow, no gradient, no 3D, no isometric.
+
 ## Install
 
-放到 Claude Code 的 skills 目录（macOS）：
+Drop into your Claude Code skills folder:
 
 ```bash
 git clone https://github.com/yanliudesign/purple-illustration.git \
   ~/.claude/skills/purple-illustration
 ```
 
-然后重启 Claude Code。触发关键词见 `SKILL.md` 顶部。
+Restart Claude Code. Trigger phrases live at the top of [`SKILL.md`](./SKILL.md).
 
-## 输出示例的口径
+## Trigger phrases
 
-一次交付：
+| You say | It runs |
+|---|---|
+| *"Landing page hero illustration for my SaaS"* / *"官网首图"* | this skill |
+| *"Purple illustration"* / *"one-brand-color illustration"* | this skill |
+| *"Feature section illustration"* / *"blog header illustration"* | this skill |
+| *"给我一张 Linear / Superhuman 那种插画"* | this skill |
 
-1. 配图策略（2–4 行）
-2. 可复制的完整英文提示词
-3. 可选的备用变体（最多 2 个）
-4. 迭代提示片段
+## Not for
 
-## 与其他 skill 的边界
+- Chinese article body illustrations (whimsical hand-drawn) → use **ian-xiaohei-illustrations**
+- Xiaohongshu vertical covers → use **atutun-xhs-cover** / **cover-design-open**
+- Real-photo social covers → use **atutun-xhs-cover**
 
-- 不与 `ian-xiaohei-illustrations` 混用（那是白纸手绘怪诞正文配图）
-- 不与 `atutun-xhs-cover` / `cover-design-open` 混用（那些是小红书 / 公众号封面）
-- 官网首图、feature section、SaaS blog 顶图 → **本 skill**
+## Delivery format
+
+One turn gives you:
+
+1. **Composition strategy** (2–4 lines: why this composition, what the UI card shows, what decorations)
+2. **A ready-to-paste English prompt** in a code block
+3. **Optional variants** (max 2: different composition / camera / decoration set)
+4. **Local-edit snippets** ("if X drifts, append this")
+
+No essay on style theory, no shot-list padding. This skill is optimized for shipping *one image*.
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
