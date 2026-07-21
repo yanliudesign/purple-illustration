@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600"
+     font-family="Inter, 'SF Pro Text', system-ui, sans-serif">
+  <!-- ================================================================
+       Example 01 · Composition A (laptop + foreground UI card)
+       Product: Group Copilot for Microsoft Teams · accent #5B47F5
+       ================================================================ -->
+  <defs>
+    <style><![CDATA[
+      .ink   { stroke:#111111; fill:none; stroke-width:2; stroke-linejoin:round; stroke-linecap:round; }
+      .thin  { stroke:#111111; fill:none; stroke-width:1.4; }
+      .skin  { fill:#F4C7A8; }
+      .hair  { fill:#111111; }
+      .accent{ fill:#5B47F5; }
+      .accS  { stroke:#5B47F5; fill:none; stroke-width:1.6; }
+      .white { fill:#FFFFFF; }
+      .txt-b { font-weight:700; fill:#111111; }
+      .txt   { fill:#111111; }
+      .txt-m { fill:#9CA3AF; }
+    ]]></style>
+  </defs>
+
+  <!-- pure white background -->
+  <rect width="900" height="600" fill="#FFFFFF"/>
+
+  <!-- ============ desk hairline ============ -->
+  <line x1="130" y1="500" x2="650" y2="500" class="thin"/>
+
+  <!-- ============ BACKGROUND: laptop with 4-person video grid ============ -->
+  <g id="laptop">
+    <!-- laptop base -->
+    <path d="M155,500 L520,500 L540,510 L145,510 Z" class="ink" fill="#FFFFFF"/>
+    <!-- screen -->
+    <rect x="175" y="235" width="340" height="230" rx="8" class="ink" fill="#F4F1FF"/>
+    <!-- camera dot -->
+    <circle cx="345" cy="248" r="2.2" fill="#111111"/>
+
+    <!-- 4-person video grid inside screen -->
+    <g transform="translate(190,262)">
+      <!-- cell 1 -->
+      <rect x="0" y="0" width="150" height="90" rx="4" class="ink" fill="#FFFFFF"/>
+      <circle cx="75" cy="52" r="18" class="skin"/>
+      <path d="M62,45 Q75,32 88,45 L88,42 Q75,28 62,42 Z" class="hair"/>
+      <circle cx="70" cy="49" r="1.4" fill="#111"/>
+      <circle cx="80" cy="49" r="1.4" fill="#111"/>
+      <path d="M70,56 Q75,58 80,56" class="thin" stroke-width="1.2"/>
+      <path d="M56,90 Q75,72 94,90" class="thin"/>
+
+      <!-- cell 2 -->
+      <rect x="160" y="0" width="150" height="90" rx="4" class="ink" fill="#FFFFFF"/>
+      <circle cx="235" cy="52" r="18" class="skin"/>
+      <path d="M222,44 Q235,28 248,44 L250,54 L220,54 Z" class="hair"/>
+      <circle cx="230" cy="49" r="1.4" fill="#111"/>
+      <circle cx="240" cy="49" r="1.4" fill="#111"/>
+      <path d="M230,56 Q235,58 240,56" class="thin" stroke-width="1.2"/>
+      <path d="M216,90 Q235,72 254,90" class="thin"/>
+
+      <!-- cell 3 -->
+      <rect x="0" y="100" width="150" height="90" rx="4" class="ink" fill="#FFFFFF"/>
+      <circle cx="75" cy="152" r="18" class="skin"/>
+      <path d="M60,146 Q75,130 90,146 L92,155 L58,155 Z" class="hair"/>
+      <circle cx="70" cy="149" r="1.4" fill="#111"/>
+      <circle cx="80" cy="149" r="1.4" fill="#111"/>
+      <path d="M70,156 Q75,158 80,156" class="thin" stroke-width="1.2"/>
+      <path d="M56,190 Q75,172 94,190" class="thin"/>
+
+      <!-- cell 4 -->
+      <rect x="160" y="100" width="150" height="90" rx="4" class="ink" fill="#FFFFFF"/>
+      <circle cx="235" cy="152" r="18" class="skin"/>
+      <path d="M222,144 Q235,128 248,144 L250,155 L220,155 Z" class="hair"/>
+      <circle cx="230" cy="149" r="1.4" fill="#111"/>
+      <circle cx="240" cy="149" r="1.4" fill="#111"/>
+      <path d="M230,156 Q235,158 240,156" class="thin" stroke-width="1.2"/>
+      <path d="M216,190 Q235,172 254,190" class="thin"/>
+    </g>
+  </g>
+
+  <!-- small potted plant left of laptop -->
+  <g id="plant" transform="translate(88,432)">
+    <path d="M14,50 L2,68 L34,68 L22,50 Z" class="ink" fill="#FFFFFF"/>
+    <path d="M18,50 Q6,30 12,10" class="ink"/>
+    <path d="M18,50 Q30,32 24,14" class="ink"/>
+    <path d="M6,22 Q14,18 18,26" class="ink" stroke-width="1.4"/>
+    <path d="M32,26 Q24,20 20,28" class="ink" stroke-width="1.4"/>
+    <path d="M8,4 Q18,0 24,4" class="ink" stroke-width="1.4"/>
+  </g>
+
+  <!-- Teams logo circle attached to laptop left -->
+  <g transform="translate(120,300)">
+    <circle cx="18" cy="18" r="18" class="thin" fill="#FFFFFF"/>
+    <rect x="10" y="9" width="16" height="18" rx="2" fill="#4B53BC"/>
+    <text x="18" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">T</text>
+  </g>
+
+  <!-- ============ FOREGROUND: UI card ============ -->
+  <g id="card" transform="translate(420,110)">
+    <rect x="0" y="0" width="360" height="380" rx="14" class="ink" fill="#FFFFFF"/>
+    <!-- top bar -->
+    <circle cx="18" cy="20" r="4" fill="#F26D6D"/>
+    <circle cx="34" cy="20" r="4" fill="#F1C24B"/>
+    <circle cx="50" cy="20" r="4" fill="#5FC98F"/>
+    <circle cx="336" cy="20" r="8" class="accent"/>
+    <line x1="0" y1="38" x2="360" y2="38" class="thin" stroke-width="1"/>
+
+    <!-- title -->
+    <text x="20" y="66" font-size="16" class="txt-b">Product Sync — chat</text>
+    <text x="20" y="83" font-size="11" class="txt-m">4 participants · today 10:00</text>
+
+    <!-- message row 1 -->
+    <g transform="translate(20,104)">
+      <circle cx="16" cy="16" r="16" class="skin"/>
+      <path d="M4,10 Q16,-4 28,10 L30,20 L2,20 Z" class="hair"/>
+      <circle cx="12" cy="15" r="1.4" fill="#111"/>
+      <circle cx="20" cy="15" r="1.4" fill="#111"/>
+      <path d="M12,22 Q16,24 20,22" class="thin" stroke-width="1.2"/>
+
+      <text x="44" y="12" font-size="12" class="txt-b">Ken</text>
+      <text x="82" y="12" font-size="10" class="txt-m">10:14</text>
+      <text x="44" y="28" font-size="11" class="txt">onboarding drop-off is 12%</text>
+    </g>
+
+    <!-- message row 2 -->
+    <g transform="translate(20,152)">
+      <circle cx="16" cy="16" r="16" class="skin"/>
+      <path d="M2,14 Q16,-2 30,14 L30,22 L2,22 Z" class="hair"/>
+      <circle cx="12" cy="15" r="1.4" fill="#111"/>
+      <circle cx="20" cy="15" r="1.4" fill="#111"/>
+      <path d="M12,22 Q16,24 20,22" class="thin" stroke-width="1.2"/>
+
+      <text x="44" y="12" font-size="12" class="txt-b">Sarah</text>
+      <text x="90" y="12" font-size="10" class="txt-m">10:15</text>
+      <text x="44" y="28" font-size="11" class="txt">we should re-align on Q2</text>
+    </g>
+
+    <!-- message row 3 -->
+    <g transform="translate(20,200)">
+      <circle cx="16" cy="16" r="16" class="skin"/>
+      <path d="M4,10 Q16,-2 28,10 Q26,4 16,4 Q6,4 4,10 Z" class="hair"/>
+      <circle cx="12" cy="15" r="1.4" fill="#111"/>
+      <circle cx="20" cy="15" r="1.4" fill="#111"/>
+      <path d="M12,22 Q16,24 20,22" class="thin" stroke-width="1.2"/>
+
+      <text x="44" y="12" font-size="12" class="txt-b">Marco</text>
+      <text x="94" y="12" font-size="10" class="txt-m">10:16</text>
+      <text x="44" y="28" font-size="11" class="txt">let's split into two threads</text>
+    </g>
+
+    <!-- summary block by Copilot -->
+    <g transform="translate(20,248)">
+      <rect x="0" y="0" width="320" height="90" rx="10" fill="#F5F3FF" class="accS"/>
+      <circle cx="18" cy="18" r="8" class="accent"/>
+      <text x="34" y="22" font-size="11" font-weight="700" fill="#5B47F5">Copilot summary</text>
+      <line x1="14" y1="34" x2="306" y2="34" stroke="#DAD3FF"/>
+      <text x="14" y="52" font-size="11" class="txt">3 decisions captured</text>
+      <text x="14" y="68" font-size="11" class="txt">2 blockers flagged</text>
+      <text x="14" y="84" font-size="11" class="txt">5 action items owned</text>
+    </g>
+
+    <!-- primary action -->
+    <g transform="translate(20,354)">
+      <rect x="0" y="0" width="120" height="24" rx="12" class="accent"/>
+      <text x="60" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Post to thread</text>
+      <text x="140" y="16" font-size="11" fill="#5B47F5" font-weight="700">Edit first</text>
+    </g>
+  </g>
+
+  <!-- ============ AI PROMPT PILL ============ -->
+  <g id="pill" transform="translate(494,86)">
+    <rect x="0" y="0" width="248" height="34" rx="17" fill="#FFFFFF" class="accS"/>
+    <!-- sparkle -->
+    <g transform="translate(12,10)" fill="#5B47F5">
+      <path d="M7,0 L8.4,5.6 L14,7 L8.4,8.4 L7,14 L5.6,8.4 L0,7 L5.6,5.6 Z"/>
+    </g>
+    <text x="34" y="22" font-size="12" font-weight="600" fill="#111">Summarize this thread</text>
+    <!-- cursor -->
+    <g transform="translate(224,10)" fill="#111">
+      <path d="M0,0 L0,14 L4,10 L7,15 L9,14 L6,9 L11,9 Z"/>
+    </g>
+  </g>
+
+  <!-- ============ SCATTERED DECORATIONS ============ -->
+  <!-- purple filled speech bubble upper-left -->
+  <g transform="translate(240,70)">
+    <path d="M0,10 Q0,0 10,0 L58,0 Q68,0 68,10 L68,26 Q68,36 58,36 L20,36 L14,44 L14,36 L10,36 Q0,36 0,26 Z" class="accent"/>
+    <line x1="10" y1="12" x2="52" y2="12" stroke="#FFFFFF" stroke-width="1.6"/>
+    <line x1="10" y1="20" x2="44" y2="20" stroke="#FFFFFF" stroke-width="1.6"/>
+    <line x1="10" y1="28" x2="38" y2="28" stroke="#FFFFFF" stroke-width="1.6"/>
+  </g>
+
+  <!-- outlined speech bubble right of card -->
+  <g transform="translate(790,240)">
+    <path d="M0,10 Q0,0 10,0 L58,0 Q68,0 68,10 L68,26 Q68,36 58,36 L50,36 L46,44 L44,36 L10,36 Q0,36 0,26 Z" class="ink" fill="#FFFFFF"/>
+    <line x1="10" y1="14" x2="54" y2="14" class="thin" stroke-width="1.2"/>
+    <line x1="10" y1="22" x2="48" y2="22" class="thin" stroke-width="1.2"/>
+    <line x1="10" y1="30" x2="40" y2="30" class="thin" stroke-width="1.2"/>
+  </g>
+
+  <!-- tilted purple pencil bottom -->
+  <g transform="translate(300,540) rotate(-28)">
+    <rect x="0" y="0" width="70" height="8" rx="1" class="accent"/>
+    <path d="M70,0 L78,4 L70,8 Z" fill="#3A2AC8"/>
+    <rect x="0" y="0" width="10" height="8" fill="#3A2AC8"/>
+  </g>
+
+  <!-- sparkle top-right of card -->
+  <g transform="translate(768,130)" fill="#5B47F5">
+    <path d="M9,0 L11,7 L18,9 L11,11 L9,18 L7,11 L0,9 L7,7 Z"/>
+  </g>
+
+  <!-- half-hidden light-purple notification behind card -->
+  <g transform="translate(400,180)">
+    <rect x="0" y="0" width="60" height="80" rx="6" fill="#EDEAFF"/>
+  </g>
+</svg>

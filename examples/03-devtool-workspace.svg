@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600"
+     font-family="Inter, 'SF Pro Text', system-ui, sans-serif">
+  <!-- ================================================================
+       Example 03 · Composition E (abstract workspace, no character)
+       Product: Developer / data tool · accent #3B6DFF (Focus Blue)
+       Demonstrates: the accent color is a variable, not fixed to purple.
+       ================================================================ -->
+  <defs>
+    <style><![CDATA[
+      .ink   { stroke:#111111; fill:none; stroke-width:2; stroke-linejoin:round; stroke-linecap:round; }
+      .thin  { stroke:#111111; fill:none; stroke-width:1.4; }
+      .accent{ fill:#3B6DFF; }
+      .accS  { stroke:#3B6DFF; fill:none; stroke-width:1.6; }
+      .txt-b { font-weight:700; fill:#111111; }
+      .txt   { fill:#111111; }
+      .txt-m { fill:#9CA3AF; }
+      .mono  { font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+    ]]></style>
+  </defs>
+
+  <rect width="900" height="600" fill="#FFFFFF"/>
+
+  <!-- ============ BACKGROUND: floating module cards ============ -->
+  <!-- calendar snippet -->
+  <g transform="translate(90,140)">
+    <rect x="0" y="0" width="140" height="100" rx="8" class="ink" fill="#FFFFFF"/>
+    <line x1="0" y1="24" x2="140" y2="24" class="thin" stroke-width="1"/>
+    <text x="10" y="18" font-size="11" class="txt-b">Aug 2026</text>
+    <g class="thin" stroke-width="1">
+      <line x1="10"  y1="42" x2="130" y2="42"/>
+      <line x1="10"  y1="62" x2="130" y2="62"/>
+      <line x1="10"  y1="82" x2="130" y2="82"/>
+      <line x1="34"  y1="24" x2="34"  y2="98"/>
+      <line x1="58"  y1="24" x2="58"  y2="98"/>
+      <line x1="82"  y1="24" x2="82"  y2="98"/>
+      <line x1="106" y1="24" x2="106" y2="98"/>
+    </g>
+    <circle cx="70" cy="52" r="6" class="accent"/>
+  </g>
+
+  <!-- chart card -->
+  <g transform="translate(70,290)">
+    <rect x="0" y="0" width="160" height="110" rx="8" class="ink" fill="#FFFFFF"/>
+    <line x1="0" y1="24" x2="160" y2="24" class="thin" stroke-width="1"/>
+    <text x="10" y="18" font-size="11" class="txt-b">weekly runs</text>
+    <text x="130" y="18" font-size="10" class="txt-m">+12%</text>
+    <!-- bars -->
+    <g class="accent">
+      <rect x="18" y="72" width="12" height="28"/>
+      <rect x="36" y="60" width="12" height="40"/>
+      <rect x="54" y="52" width="12" height="48"/>
+      <rect x="72" y="42" width="12" height="58"/>
+      <rect x="90" y="48" width="12" height="52"/>
+      <rect x="108" y="36" width="12" height="64"/>
+      <rect x="126" y="30" width="12" height="70"/>
+    </g>
+    <line x1="16" y1="100" x2="144" y2="100" class="thin" stroke-width="1"/>
+  </g>
+
+  <!-- settings gear card -->
+  <g transform="translate(150,460)">
+    <rect x="0" y="0" width="120" height="70" rx="8" class="ink" fill="#FFFFFF"/>
+    <g transform="translate(16,10)" class="thin">
+      <circle cx="16" cy="16" r="10"/>
+      <circle cx="16" cy="16" r="4" fill="#111"/>
+      <line x1="16" y1="0" x2="16" y2="4"/>
+      <line x1="16" y1="28" x2="16" y2="32"/>
+      <line x1="0" y1="16" x2="4" y2="16"/>
+      <line x1="28" y1="16" x2="32" y2="16"/>
+      <line x1="4" y1="4" x2="7" y2="7"/>
+      <line x1="25" y1="25" x2="28" y2="28"/>
+      <line x1="4" y1="28" x2="7" y2="25"/>
+      <line x1="25" y1="7" x2="28" y2="4"/>
+    </g>
+    <text x="60" y="26" font-size="11" class="txt-b">Runners</text>
+    <text x="60" y="42" font-size="10" class="txt-m">us-east · 4 active</text>
+    <rect x="60" y="52" width="40" height="10" rx="5" class="accent"/>
+  </g>
+
+  <!-- hairline "desk" -->
+  <line x1="60" y1="558" x2="330" y2="558" class="thin" stroke-width="1" stroke-dasharray="2 3"/>
+
+  <!-- ============ FOREGROUND: main UI card (query builder) ============ -->
+  <g id="card" transform="translate(340,100)">
+    <rect x="0" y="0" width="460" height="400" rx="14" class="ink" fill="#FFFFFF"/>
+    <!-- top bar -->
+    <circle cx="18" cy="20" r="4" fill="#F26D6D"/>
+    <circle cx="34" cy="20" r="4" fill="#F1C24B"/>
+    <circle cx="50" cy="20" r="4" fill="#5FC98F"/>
+    <circle cx="436" cy="20" r="8" class="accent"/>
+    <line x1="0" y1="38" x2="460" y2="38" class="thin" stroke-width="1"/>
+
+    <!-- title bar -->
+    <text x="20" y="66" font-size="16" class="txt-b">query · orders_daily</text>
+    <text x="20" y="83" font-size="11" class="txt-m">postgres · warehouse-prod</text>
+
+    <!-- editor block -->
+    <g transform="translate(20,102)">
+      <rect x="0" y="0" width="420" height="140" rx="8" fill="#F7F8FF"/>
+      <!-- gutter numbers -->
+      <g class="mono" font-size="10" fill="#9CA3AF" text-anchor="end">
+        <text x="24" y="20">1</text>
+        <text x="24" y="38">2</text>
+        <text x="24" y="56">3</text>
+        <text x="24" y="74">4</text>
+        <text x="24" y="92">5</text>
+        <text x="24" y="110">6</text>
+        <text x="24" y="128">7</text>
+      </g>
+      <!-- code lines -->
+      <g class="mono" font-size="11">
+        <text x="36" y="20"><tspan fill="#3B6DFF" font-weight="700">SELECT</tspan> <tspan fill="#111">date_trunc('day', created_at) AS d,</tspan></text>
+        <text x="36" y="38"><tspan fill="#111">       count(*) AS orders,</tspan></text>
+        <text x="36" y="56"><tspan fill="#111">       sum(total) AS gmv</tspan></text>
+        <text x="36" y="74"><tspan fill="#3B6DFF" font-weight="700">FROM</tspan> <tspan fill="#111">orders</tspan></text>
+        <text x="36" y="92"><tspan fill="#3B6DFF" font-weight="700">WHERE</tspan> <tspan fill="#111">created_at &gt; now() - interval '30 days'</tspan></text>
+        <text x="36" y="110"><tspan fill="#3B6DFF" font-weight="700">GROUP BY</tspan> <tspan fill="#111">1</tspan></text>
+        <text x="36" y="128"><tspan fill="#3B6DFF" font-weight="700">ORDER BY</tspan> <tspan fill="#111">1;</tspan></text>
+      </g>
+      <!-- caret -->
+      <line x1="336" y1="98" x2="336" y2="112" class="accent" stroke="#3B6DFF" stroke-width="1.6"/>
+    </g>
+
+    <!-- result table header -->
+    <g transform="translate(20,258)">
+      <line x1="0" y1="0" x2="420" y2="0" class="thin" stroke-width="1"/>
+      <g font-size="10.5" class="txt-b">
+        <text x="0" y="14">day</text>
+        <text x="200" y="14">orders</text>
+        <text x="320" y="14">gmv</text>
+      </g>
+      <line x1="0" y1="22" x2="420" y2="22" class="thin" stroke-width="1"/>
+      <g font-size="10.5" class="mono" fill="#111">
+        <text x="0"   y="38">2026-08-01</text>
+        <text x="200" y="38">1,204</text>
+        <text x="320" y="38">$48,320</text>
+
+        <text x="0"   y="56">2026-08-02</text>
+        <text x="200" y="56">1,331</text>
+        <text x="320" y="56">$52,110</text>
+
+        <text x="0"   y="74">2026-08-03</text>
+        <text x="200" y="74">1,410</text>
+        <text x="320" y="74">$55,904</text>
+      </g>
+    </g>
+
+    <!-- action row -->
+    <g transform="translate(20,354)">
+      <rect x="0" y="0" width="88" height="24" rx="12" class="accent"/>
+      <text x="44" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Run</text>
+      <rect x="100" y="0" width="90" height="24" rx="12" fill="#FFFFFF" class="accS"/>
+      <text x="145" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#3B6DFF">Save as view</text>
+      <text x="220" y="16" font-size="11" class="txt-m">last run · 2s ago</text>
+    </g>
+  </g>
+
+  <!-- ============ AI PROMPT PILL ============ -->
+  <g id="pill" transform="translate(490,74)">
+    <rect x="0" y="0" width="256" height="34" rx="17" fill="#FFFFFF" class="accS"/>
+    <g transform="translate(12,10)" fill="#3B6DFF">
+      <path d="M7,0 L8.4,5.6 L14,7 L8.4,8.4 L7,14 L5.6,8.4 L0,7 L5.6,5.6 Z"/>
+    </g>
+    <text x="34" y="22" font-size="12" font-weight="600" fill="#111">Generate this query for me</text>
+    <g transform="translate(234,10)" fill="#111">
+      <path d="M0,0 L0,14 L4,10 L7,15 L9,14 L6,9 L11,9 Z"/>
+    </g>
+  </g>
+
+  <!-- ============ DECORATIONS ============ -->
+  <!-- Blue filled speech bubble upper-right -->
+  <g transform="translate(770,150)">
+    <path d="M0,10 Q0,0 10,0 L60,0 Q70,0 70,10 L70,26 Q70,36 60,36 L52,36 L48,44 L46,36 L10,36 Q0,36 0,26 Z" class="accent"/>
+    <line x1="10" y1="12" x2="52" y2="12" stroke="#FFFFFF" stroke-width="1.6"/>
+    <line x1="10" y1="20" x2="46" y2="20" stroke="#FFFFFF" stroke-width="1.6"/>
+    <line x1="10" y1="28" x2="38" y2="28" stroke="#FFFFFF" stroke-width="1.6"/>
+  </g>
+
+  <!-- sparkle top of card -->
+  <g transform="translate(776,120)" fill="#3B6DFF">
+    <path d="M9,0 L11,7 L18,9 L11,11 L9,18 L7,11 L0,9 L7,7 Z"/>
+  </g>
+
+  <!-- outlined bubble bottom-right -->
+  <g transform="translate(790,510)">
+    <path d="M0,10 Q0,0 10,0 L54,0 Q64,0 64,10 L64,24 Q64,34 54,34 L26,34 L20,42 L18,34 L10,34 Q0,34 0,24 Z" class="ink" fill="#FFFFFF" stroke-width="1.6"/>
+    <line x1="10" y1="12" x2="52" y2="12" class="thin" stroke-width="1.2"/>
+    <line x1="10" y1="22" x2="44" y2="22" class="thin" stroke-width="1.2"/>
+  </g>
+
+  <!-- API/Postgres logo circle attached to left module -->
+  <g transform="translate(38,180)">
+    <circle cx="16" cy="16" r="16" class="thin" fill="#FFFFFF"/>
+    <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="700" fill="#3B6DFF" class="mono">PG</text>
+  </g>
+
+  <!-- small three-dot loader (data) near center -->
+  <g transform="translate(310,420)" class="accent">
+    <circle cx="0" cy="0" r="3"/>
+    <circle cx="10" cy="0" r="3"/>
+    <circle cx="20" cy="0" r="3" fill="#B7C4FF"/>
+  </g>
+</svg>

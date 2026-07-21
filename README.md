@@ -17,6 +17,21 @@
 | [`references/composition-patterns.md`](./references/composition-patterns.md) | 5 种主构图套路 + 装饰物摆放法 |
 | [`references/prompt-template.md`](./references/prompt-template.md) | 单张生图提示词模板（含变量） |
 | [`references/qa-checklist.md`](./references/qa-checklist.md) | 生成后检查和迭代规则 |
+| [`examples/`](./examples/) | 3 个跨构图 + 跨品牌色的示例（SVG 目标图 + 可复制 prompt） |
+
+## Examples
+
+|  | Composition | Product | Accent |
+|---|---|---|---|
+| [01](./examples/01-teams-copilot.md) | A · laptop + UI card | Group Copilot for Teams | `#5B47F5` |
+| [02](./examples/02-writing-assistant.md) | C · single person + UI card | AI writing assistant | `#7C5CFF` |
+| [03](./examples/03-devtool-workspace.md) | E · abstract workspace | Developer / data tool | `#3B6DFF` |
+
+<p align="left">
+  <img src="./examples/01-teams-copilot.svg"      width="32%" alt="Group Copilot for Teams">
+  <img src="./examples/02-writing-assistant.svg"  width="32%" alt="AI writing assistant">
+  <img src="./examples/03-devtool-workspace.svg"  width="32%" alt="Developer / data tool">
+</p>
 
 ## Install
 
