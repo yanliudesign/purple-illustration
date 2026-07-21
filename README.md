@@ -71,6 +71,16 @@ Restart Claude Code. Trigger phrases live at the top of [`SKILL.md`](./SKILL.md)
 | *"Give me a Linear / Superhuman style illustration"* | this skill |
 | *"Purple illustration"* / *"one-brand-color illustration"* (legacy alias) | this skill |
 
+## Good for
+
+- **All SaaS marketing surfaces** — landing hero, feature sections, pricing-page graphics, blog headers, Twitter announcement cards
+- **B2B / enterprise product launches** — launch-email headers, changelog covers, PLG-style feature spotlights
+- **Trust-building business content** — investor deck covers, pitch decks, fundraise-page hero, whitepaper covers
+- **Developer / technical content** — conference talk covers, dev blog headers, API doc headers, SDK release notes
+- **AI / data / research communication** — research paper covers, model-card headers, AI product launch graphics, evals dashboards
+- **Education / workshops / courses** — course landing pages, bootcamp signup pages, workshop banners, Notion learning modules
+- **Portfolio / case studies** — featured project cards, case study headers, personal site hero for designers / PMs / engineers
+
 ## Not for
 
 - **Entertainment / streaming / game promo art** — needs mood and drama; a floating UI card would look off

@@ -71,6 +71,16 @@ git clone https://github.com/yanliudesign/saas-illustration.git \
 | *"我要 Linear / Superhuman 那种插画"* | 本 skill |
 | *"紫色插画"* / *"purple illustration"* / *"one-brand-color illustration"*（历史别名） | 本 skill |
 
+## 适用
+
+- **SaaS 一切营销表面** —— 官网首屏、Feature Section、Pricing 页配图、Blog 顶图、Twitter 发布卡片
+- **B2B / 企业级产品发布** —— 发布邮件顶图、Changelog 封面、PLG 风格的新功能高亮
+- **需要"专业感"的商务内容** —— 投资人 deck 封面、pitch deck、融资页 hero、白皮书封面
+- **开发者 / 技术内容** —— 技术 talk 封面、Conference 首图、Dev blog 顶图、API 文档头图、SDK release notes
+- **AI / 数据 / Research** —— Research paper 封面、model card 顶图、AI 产品发布图、evals dashboard
+- **教育 / Workshop / 课程** —— Course landing、Bootcamp 招生页、Workshop 报名页、Notion 学习模块
+- **Portfolio / Case study** —— Featured project 卡、Case study 顶图、设计师 / PM / 工程师个人网站 hero
+
 ## 什么时候**不要**用
 
 - **娱乐 / 影视 / 游戏推广图** —— 需要氛围和戏剧张力，UI 卡在这儿没意义
