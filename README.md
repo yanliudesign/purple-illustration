@@ -73,9 +73,13 @@ Restart Claude Code. Trigger phrases live at the top of [`SKILL.md`](./SKILL.md)
 
 ## Not for
 
-- Chinese article body illustrations (whimsical hand-drawn) → use **ian-xiaohei-illustrations**
-- Xiaohongshu vertical covers → use **atutun-xhs-cover** / **cover-design-open**
-- Real-photo social covers → use **atutun-xhs-cover**
+- **Entertainment / streaming / game promo art** — needs mood and drama; a floating UI card would look off
+- **Consumer goods / fashion / beauty / F&B** — needs real product photography and emotional warmth, not vector line art
+- **Fiction / children's book / graphic novel covers** — needs narrative illustration, not a marketing screen
+- **Concert / exhibition / event posters** — that's typographic design, not product illustration
+- **Whimsical hand-drawn illustrations** for essays, zines, personal blogs (opposite aesthetic)
+- **Real-photo social covers** (Xiaohongshu / Douyin viral-style covers with faces)
+- **Editorial magazine / newspaper illustrations** — needs artistry and narrative, not clarity
 
 ## Delivery format
 
