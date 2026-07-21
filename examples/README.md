@@ -1,28 +1,30 @@
 # Examples
 
-Three worked examples showing the range of the skill: a **collaborative product**, a **single-user creator tool**, and an **abstract dev/data tool**. Each example has:
+Three real generations that came out of this skill's prompt template, kept as **canonical reference outputs**. Each has:
 
-- an **SVG mockup** of the target output (use it as your visual QA target)
-- a **`.md` brief** with the fully-filled prompt (copy-paste into any image model)
+- the **rendered PNG** — what "good" looks like
+- a **`.md` brief** — the exact prompt used, so you can reproduce or riff on it
 
-| # | Composition | Product | Accent |
+<p>
+  <img src="./01-teams-copilot.png"      width="32%" alt="Group Copilot approval">
+  <img src="./02-meetly-transcript.png"  width="32%" alt="Meetly live transcript">
+  <img src="./03-meetly-agenda.png"      width="32%" alt="Meetly pre-meeting agenda">
+</p>
+
+| # | Composition | Scenario | Accent |
 |---|---|---|---|
-| 01 | A · laptop + UI card | [Group Copilot for Teams](./01-teams-copilot.md) | `#5B47F5` electric purple |
-| 02 | C · single person + UI card | [AI writing assistant](./02-writing-assistant.md) | `#7C5CFF` default signal purple |
-| 03 | E · abstract workspace | [Developer / data tool](./03-devtool-workspace.md) | `#3B6DFF` focus blue (shows accent is a variable) |
+| [01](./01-teams-copilot.md) | C · single person + UI card | Copilot drafted a plan, human is about to tap **Approve** | `#5B47F5` |
+| [02](./02-meetly-transcript.md) | A · laptop + UI card | Meetly listens to a live meeting, surfaces a "Decision detected" card | `#5B47F5` |
+| [03](./03-meetly-agenda.md) | A · laptop + UI card | Meetly drafts a pre-meeting agenda 12 min before the call | `#5B47F5` |
 
 ## How to use these
 
-1. Pick the example whose composition and vibe match your product
-2. Open its `.md` and copy the prompt
+1. Pick the example whose composition and moment match your product
+2. Open its `.md`, copy the prompt block, and paste into your image model of choice (GPT-image / Nano Banana / Midjourney / Flux)
 3. Swap the specific brand color, UI card content, and AI pill text for your product
-4. Feed it to your image model of choice (GPT-image / Nano Banana / Midjourney / Flux)
-5. Open the SVG side by side as a visual QA reference — line weight, layering, decoration density, no-shadow discipline
-6. If the output drifts, use the local-edit prompts in [`../references/prompt-template.md`](../references/prompt-template.md#图像编辑局部修图提示)
+4. When the output drifts, use the local-edit prompts in [`../references/prompt-template.md`](../references/prompt-template.md#图像编辑局部修图提示)
+5. Cross-check against [`../references/qa-checklist.md`](../references/qa-checklist.md) before shipping
 
-## What the SVGs are (and aren't)
+## Why 02 and 03 share a product
 
-- ✅ Faithful visual targets that show how the four layers stack (background scene → UI card → AI pill → decorations)
-- ✅ Editable — open in Figma / Illustrator to inspect exact positions, sizes, spacing
-- ❌ Not the "final" illustration for these products — real generations will have subtly hand-drawn character features and more organic linework than pure SVG can convey
-- ❌ Not templates — do not just recolor and ship; regenerate with your own product content per the skill's core rule ("UI card shows THIS product's most core screen")
+They're the same product (**Meetly**) at two different moments — *before* the meeting and *during* the meeting. A single skill can carry one product's identity across a whole marketing site: same character DNA, same accent color, same decoration vocabulary, different UI cards.

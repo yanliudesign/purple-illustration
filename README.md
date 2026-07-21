@@ -21,16 +21,16 @@
 
 ## Examples
 
-|  | Composition | Product | Accent |
+|  | Composition | Scenario | Accent |
 |---|---|---|---|
-| [01](./examples/01-teams-copilot.md) | A · laptop + UI card | Group Copilot for Teams | `#5B47F5` |
-| [02](./examples/02-writing-assistant.md) | C · single person + UI card | AI writing assistant | `#7C5CFF` |
-| [03](./examples/03-devtool-workspace.md) | E · abstract workspace | Developer / data tool | `#3B6DFF` |
+| [01](./examples/01-teams-copilot.md) | C · single person + UI card | Group Copilot for Teams — approval moment | `#5B47F5` |
+| [02](./examples/02-meetly-transcript.md) | A · laptop + UI card | Meetly — live transcript & decision detection | `#5B47F5` |
+| [03](./examples/03-meetly-agenda.md) | A · laptop + UI card | Meetly — pre-meeting agenda draft | `#5B47F5` |
 
 <p align="left">
-  <img src="./examples/01-teams-copilot.svg"      width="32%" alt="Group Copilot for Teams">
-  <img src="./examples/02-writing-assistant.svg"  width="32%" alt="AI writing assistant">
-  <img src="./examples/03-devtool-workspace.svg"  width="32%" alt="Developer / data tool">
+  <img src="./examples/01-teams-copilot.png"      width="32%" alt="Group Copilot approval">
+  <img src="./examples/02-meetly-transcript.png"  width="32%" alt="Meetly live transcript">
+  <img src="./examples/03-meetly-agenda.png"      width="32%" alt="Meetly pre-meeting agenda">
 </p>
 
 ## Install
