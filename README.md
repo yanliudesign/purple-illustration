@@ -2,7 +2,7 @@
 
 [中文](./README.zh.md) · **English**
 
-# 🎨 Purple Illustration
+# 🎨 SaaS Illustration
 
 ---
 
@@ -11,7 +11,7 @@
 [![License](https://img.shields.io/badge/LICENSE-MIT-4c8bf5?style=flat-square&labelColor=333)](./LICENSE)
 [![Version](https://img.shields.io/badge/VERSION-1.0.0-2ea44f?style=flat-square&labelColor=333)]()
 [![Examples](https://img.shields.io/badge/EXAMPLES-3-2ea44f?style=flat-square&labelColor=333)](./examples)
-[![Stars](https://img.shields.io/github/stars/yanliudesign/purple-illustration?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/purple-illustration/stargazers)
+[![Stars](https://img.shields.io/github/stars/yanliudesign/saas-illustration?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/saas-illustration/stargazers)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-d97757?style=flat-square&labelColor=1a1a1a&logo=anthropic&logoColor=white)](https://claude.ai/code)
 [![Codex](https://img.shields.io/badge/Codex-Skill-2ea44f?style=flat-square&labelColor=1a1a1a)]()
@@ -24,6 +24,8 @@
 A design-taste skill that turns any SaaS product brief into a **clean, professional hero illustration** — the kind that lives on a landing page, blog header, or feature section. Signature move: a **real product UI card floating in the foreground**, a **line-art scene behind it**, and **one brand color** doing all the accent work.
 
 Not a coloring book. Not a concept illustration. Not a hand-drawn zine. This is the disciplined SaaS look — Linear · Superhuman · Tactiq · Notion — but generated from a prompt.
+
+**Also works for adjacent digital-product scenarios** — technical talk covers, portfolio featured-project cards, workshop / course landing pages, research paper announcement graphics, product-launch email headers, internal all-hands / roadmap slides. Any moment where you need *one artifact + one brand color + one clean scene*, this skill applies.
 
 <p align="center">
   <img src="./examples/01-teams-copilot.png"      width="32%" alt="Group Copilot approval">
@@ -53,8 +55,8 @@ Not a coloring book. Not a concept illustration. Not a hand-drawn zine. This is 
 Drop into your Claude Code skills folder:
 
 ```bash
-git clone https://github.com/yanliudesign/purple-illustration.git \
-  ~/.claude/skills/purple-illustration
+git clone https://github.com/yanliudesign/saas-illustration.git \
+  ~/.claude/skills/saas-illustration
 ```
 
 Restart Claude Code. Trigger phrases live at the top of [`SKILL.md`](./SKILL.md).
@@ -64,9 +66,10 @@ Restart Claude Code. Trigger phrases live at the top of [`SKILL.md`](./SKILL.md)
 | You say | It runs |
 |---|---|
 | *"Landing page hero illustration for my SaaS"* / *"官网首图"* | this skill |
-| *"Purple illustration"* / *"one-brand-color illustration"* | this skill |
 | *"Feature section illustration"* / *"blog header illustration"* | this skill |
+| *"Talk cover / portfolio hero / workshop landing illustration"* | this skill |
 | *"给我一张 Linear / Superhuman 那种插画"* | this skill |
+| *"Purple illustration"* / *"紫色插画"* / *"one-brand-color illustration"* (legacy alias) | this skill |
 
 ## Not for
 

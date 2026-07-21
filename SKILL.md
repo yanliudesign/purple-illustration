@@ -1,13 +1,15 @@
 ---
-name: purple-illustration
-description: 紫色（或任意单品牌强调色）SaaS 产品英雄插画风格。用于官网首屏、Landing Page、Feature Section、Blog Header、演讲首页等场景，把"一个真实的产品 UI 卡片"叠在"线稿场景（笔电/桌面/协作场景）"之上，配以品牌强调色的漂浮装饰（聊天气泡、小图标、logo、植物）。视觉特征：纯白底、黑色矢量线稿、单一品牌强调色（默认紫 #7C5CFF） + 温暖肤色、干净不手绘、UI 卡越出后景边界。默认输出可直接喂给 Nano Banana / GPT-image / Midjourney / Flux 的英文提示词。关键词：purple illustration, 紫色插画, SaaS hero illustration, product hero, landing page illustration, 官网插画, 产品首屏, feature illustration, duotone illustration, Tactiq 风格, Superhuman 风格, Linear 风格。
+name: saas-illustration
+description: SaaS 产品英雄插画风格 —— 单一品牌强调色 + 真产品 UI 卡片 + 线稿场景。用于官网首屏、Landing Page、Feature Section、Blog Header、演讲首页，以及邻近场景（技术 talk 封面、portfolio featured project、workshop landing、research paper 顶图、产品发布邮件顶图）。把"一个真实的产品 UI 卡片"叠在"线稿场景（笔电/桌面/协作场景）"之上，配以品牌强调色的漂浮装饰（聊天气泡、小图标、logo、植物）。视觉特征：纯白底、黑色矢量线稿、单一品牌强调色（默认紫 #7C5CFF，可换任意品牌 HEX）+ 温暖肤色、干净不手绘、UI 卡越出后景边界。默认输出可直接喂给 Nano Banana / GPT-image / Midjourney / Flux 的英文提示词。关键词：SaaS illustration, SaaS hero illustration, product hero, landing page illustration, 官网插画, 产品首屏, feature illustration, hero image, purple illustration, 紫色插画, 单强调色插画, single-accent illustration, duotone illustration, Tactiq 风格, Superhuman 风格, Linear 风格。
 ---
 
-# Purple Illustration（紫色 SaaS 产品英雄插画）
+# SaaS Illustration（SaaS 产品英雄插画）
 
 ## 核心定位
 
 为 SaaS / AI 产品的**营销场景**生成一张干净、专业、可信、能"一眼看懂产品在做什么"的英雄插画。不是解释性配图，不是漫画，不是手绘草图，也不是概念艺术——是一张**能直接放在官网首屏或博客顶图**的插画。
+
+同 DNA 也适用于**邻近的数字产品场景**：技术 talk 封面、portfolio featured project 卡、workshop / course landing page、research paper 顶图、产品发布邮件顶图、内部 all-hands / 路线图封面 —— 任何"一个可展示的 artifact + 一个品牌色"的组合都走这个 skill。
 
 标志性动作：**真产品 UI 卡片漂浮在前景 + 线稿场景在后景 + 少量品牌色装饰散落周围**。
 

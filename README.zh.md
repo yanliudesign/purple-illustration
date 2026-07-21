@@ -2,7 +2,7 @@
 
 **中文** · [English](./README.md)
 
-# 🎨 紫色插画
+# 🎨 SaaS 插画
 
 ---
 
@@ -11,7 +11,7 @@
 [![License](https://img.shields.io/badge/LICENSE-MIT-4c8bf5?style=flat-square&labelColor=333)](./LICENSE)
 [![Version](https://img.shields.io/badge/VERSION-1.0.0-2ea44f?style=flat-square&labelColor=333)]()
 [![Examples](https://img.shields.io/badge/EXAMPLES-3-2ea44f?style=flat-square&labelColor=333)](./examples)
-[![Stars](https://img.shields.io/github/stars/yanliudesign/purple-illustration?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/purple-illustration/stargazers)
+[![Stars](https://img.shields.io/github/stars/yanliudesign/saas-illustration?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/saas-illustration/stargazers)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-d97757?style=flat-square&labelColor=1a1a1a&logo=anthropic&logoColor=white)](https://claude.ai/code)
 [![Codex](https://img.shields.io/badge/Codex-Skill-2ea44f?style=flat-square&labelColor=1a1a1a)]()
@@ -24,6 +24,8 @@
 一个"审美克制"的 skill，把任何 SaaS 产品的一句话简报变成**能直接放在官网首屏、Blog 顶图、Feature Section** 的英雄插画。标志性动作：**真产品 UI 卡片漂浮在前景 + 线稿场景在后景 + 一个品牌强调色**做所有点缀。
 
 不是解释性配图，不是漫画，不是手绘 zine，不是概念艺术。就是当代 SaaS 那种收敛、专业、能过设计评审的插画 —— Linear · Superhuman · Tactiq · Notion 那种手感，用一段 prompt 生出来。
+
+**同 DNA 也适用于邻近的数字产品场景** —— 技术 talk 封面、portfolio featured project 卡、workshop / course landing page、research paper 发布图、产品发布邮件顶图、内部 all-hands / 路线图封面。只要能凑出"一个可展示的 artifact + 一个品牌色 + 一个干净场景"，就走这个 skill。
 
 <p align="center">
   <img src="./examples/01-teams-copilot.png"      width="32%" alt="Group Copilot approval">
@@ -53,8 +55,8 @@
 丢到 Claude Code 的 skills 目录：
 
 ```bash
-git clone https://github.com/yanliudesign/purple-illustration.git \
-  ~/.claude/skills/purple-illustration
+git clone https://github.com/yanliudesign/saas-illustration.git \
+  ~/.claude/skills/saas-illustration
 ```
 
 重启 Claude Code。触发关键词见 [`SKILL.md`](./SKILL.md) 顶部。
@@ -64,9 +66,10 @@ git clone https://github.com/yanliudesign/purple-illustration.git \
 | 你说 | 会触发 |
 |---|---|
 | *"给我做张官网首图 / Landing page hero illustration"* | 本 skill |
-| *"紫色插画"* / *"one-brand-color illustration"* | 本 skill |
 | *"Feature section 配图 / Blog 顶图"* | 本 skill |
+| *"技术 talk 封面 / portfolio 首图 / workshop landing 插画"* | 本 skill |
 | *"我要 Linear / Superhuman 那种插画"* | 本 skill |
+| *"紫色插画"* / *"purple illustration"* / *"one-brand-color illustration"*（历史别名） | 本 skill |
 
 ## 什么时候**不要**用
 
